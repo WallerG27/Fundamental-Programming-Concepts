@@ -1,0 +1,6 @@
+bits = input(str("Enter a string of bits: "))
+end = len(bits)
+
+if len(bits) > 1:
+    finalBits = bits[-1] + bits[0:(end - 1)]
+print(finalBits)

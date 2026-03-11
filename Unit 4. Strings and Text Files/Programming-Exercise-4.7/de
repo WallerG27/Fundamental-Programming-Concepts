@@ -1,0 +1,21 @@
+#input
+enFile = input("Enter the input file name: ")
+decFile = input("Enter the output file name: ")
+distance = int(input("Enter the distance value: "))
+code = ""
+
+#InputFile
+file = open(enFile, 'r')
+text = file.readline()
+
+#Converion
+for ch in text:
+    ordValue = ord(ch)
+    cipherValue = ordValue - distance
+    code +=  chr(cipherValue)
+
+#OutputFile
+decFile = open(decFile, "w")
+decFile.write(code)
+print(code)
+

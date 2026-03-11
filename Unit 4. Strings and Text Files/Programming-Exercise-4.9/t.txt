@@ -1,0 +1,8 @@
+   1> inFile = input("Input filename: ") 
+   2> outFile = input("Output filename: ") 
+   3> inputFile = open(inputFileName, "r") 
+   4> outputFile = open(outputFileName, "w") 
+   5> count = 1 
+   6> for line in inputFile: 
+   7>   newLine = str(count).rjust(4, " ") + "> " + line outputFile.write(newLine) print(newLine) 
+   8>   count += 1
